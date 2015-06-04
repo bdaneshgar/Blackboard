@@ -2,11 +2,12 @@
 //  AppDelegate.m
 //  Blackboard
 //
-//  Created by Brian Daneshgar on 6/2/15.
+//  Created by Brian Daneshgar on 6/1/15.
 //  Copyright (c) 2015 Brian Daneshgar. All rights reserved.
 //
 
 #import "AppDelegate.h"
+#import <Parse/Parse.h>
 
 @interface AppDelegate ()
 
@@ -17,6 +18,14 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
+    
+    [Parse enableLocalDatastore];
+    [Parse setApplicationId:@"Rwn21x2cyD5q8Ymrb7PJ6CTeZALJ1p7K7TkalGhi"
+                  clientKey:@"2lBcDoOgPjllSbySWI2lSSojhGtejKulEtbsaRQC"];
+    [PFAnalytics trackAppOpenedWithLaunchOptions:launchOptions];
+    
+    
+    
     return YES;
 }
 
