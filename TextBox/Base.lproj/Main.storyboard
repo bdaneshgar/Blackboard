@@ -1,0 +1,226 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="8164.2" systemVersion="15A204h" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8135.1"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <mutableArray key="Roboto-Medium.ttf">
+            <string>Roboto-Medium</string>
+            <string>Roboto-Medium</string>
+            <string>Roboto-Medium</string>
+        </mutableArray>
+    </customFonts>
+    <scenes>
+        <!--ViewController-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController title="ViewController" id="BYZ-38-t0r" customClass="ViewController" customModule="BlackBox" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hHw-7V-ker">
+                                <rect key="frame" x="20" y="28" width="560" height="444"/>
+                                <animations/>
+                                <constraints>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="500" id="M9W-Aa-0ul"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Roboto-Medium" family="Roboto" pointSize="17"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="M9W-Aa-0ul"/>
+                                    </mask>
+                                </variation>
+                            </label>
+                        </subviews>
+                        <animations/>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="centerY" secondItem="hHw-7V-ker" secondAttribute="centerY" constant="50" id="3kx-UH-lOP"/>
+                            <constraint firstItem="hHw-7V-ker" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="5ok-Su-U16"/>
+                            <constraint firstItem="hHw-7V-ker" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="Ear-Jz-umm"/>
+                            <constraint firstItem="hHw-7V-ker" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="8" id="Sd6-02-FRC"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="hHw-7V-ker" secondAttribute="trailing" id="mV8-Ao-qXG"/>
+                            <constraint firstItem="hHw-7V-ker" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="rUw-D2-nxN"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="5ok-Su-U16"/>
+                                <exclude reference="rUw-D2-nxN"/>
+                            </mask>
+                        </variation>
+                    </view>
+                    <connections>
+                        <outlet property="text" destination="hHw-7V-ker" id="8Hu-D9-cFD"/>
+                        <segue destination="0um-4t-wfz" kind="presentation" identifier="add" modalTransitionStyle="coverVertical" id="F8Y-dp-8Ox"/>
+                        <segue destination="NPq-eu-ZJg" kind="presentation" identifier="mod" modalPresentationStyle="overCurrentContext" id="0JW-BM-EEs"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="308" y="406"/>
+        </scene>
+        <!--AddOneViewController-->
+        <scene sceneID="YiT-WJ-dRS">
+            <objects>
+                <viewController storyboardIdentifier="AddOneViewController" title="AddOneViewController" id="0um-4t-wfz" customClass="AddOneViewController" customModule="BlackBox" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="zBb-nq-BbW"/>
+                        <viewControllerLayoutGuide type="bottom" id="a23-gI-6DA"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="vQp-BK-0Td">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="New Entry" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="lbS-kf-lz3">
+                                <rect key="frame" x="0.0" y="100" width="600" height="500"/>
+                                <animations/>
+                                <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="72" id="CN4-6m-6jA"/>
+                                </constraints>
+                                <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" name="Roboto-Medium" family="Roboto" pointSize="17"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences" keyboardAppearance="alert" returnKeyType="done"/>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="CN4-6m-6jA"/>
+                                    </mask>
+                                </variation>
+                            </textView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qba-1F-lPF">
+                                <rect key="frame" x="20" y="22" width="40" height="40"/>
+                                <animations/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="40" id="4Nk-uv-GMp"/>
+                                    <constraint firstAttribute="height" constant="40" id="SLt-dw-oLJ"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="GillSans" family="Gill Sans" pointSize="40"/>
+                                <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" image="x.png"/>
+                                <connections>
+                                    <action selector="cancel:" destination="0um-4t-wfz" eventType="touchUpInside" id="ymi-1h-87K"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <animations/>
+                        <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="trailingMargin" secondItem="lbS-kf-lz3" secondAttribute="trailing" constant="-20" id="6rO-mm-bu9"/>
+                            <constraint firstItem="qba-1F-lPF" firstAttribute="leading" secondItem="vQp-BK-0Td" secondAttribute="leadingMargin" id="9Tw-Di-6mf"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="lbS-kf-lz3" secondAttribute="trailing" constant="-16" id="N5l-Sf-jPU"/>
+                            <constraint firstItem="lbS-kf-lz3" firstAttribute="leading" secondItem="vQp-BK-0Td" secondAttribute="leadingMargin" constant="-20" id="OYP-aL-Tdn"/>
+                            <constraint firstItem="a23-gI-6DA" firstAttribute="top" secondItem="lbS-kf-lz3" secondAttribute="bottom" id="UGb-RB-tyX"/>
+                            <constraint firstItem="lbS-kf-lz3" firstAttribute="leading" secondItem="vQp-BK-0Td" secondAttribute="leadingMargin" constant="-16" id="UOa-gD-zJf"/>
+                            <constraint firstItem="lbS-kf-lz3" firstAttribute="top" secondItem="zBb-nq-BbW" secondAttribute="bottom" constant="80" id="b5C-Xi-42f"/>
+                            <constraint firstItem="qba-1F-lPF" firstAttribute="top" secondItem="vQp-BK-0Td" secondAttribute="topMargin" constant="22" id="b7j-bT-fFX"/>
+                            <constraint firstItem="qba-1F-lPF" firstAttribute="top" secondItem="zBb-nq-BbW" secondAttribute="bottom" constant="22" id="eoG-HG-Oel"/>
+                            <constraint firstAttribute="bottomMargin" secondItem="lbS-kf-lz3" secondAttribute="bottom" constant="216" id="xBL-e7-WBn"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="eoG-HG-Oel"/>
+                                <exclude reference="N5l-Sf-jPU"/>
+                                <exclude reference="UOa-gD-zJf"/>
+                                <exclude reference="xBL-e7-WBn"/>
+                            </mask>
+                        </variation>
+                    </view>
+                    <connections>
+                        <outlet property="cancel" destination="qba-1F-lPF" id="gXI-2L-xhm"/>
+                        <outlet property="textView" destination="lbS-kf-lz3" id="NLC-ED-dM4"/>
+                        <segue destination="qoQ-L6-fiC" kind="unwind" identifier="unwind" unwindAction="unwindToSegue:" id="Cxk-0X-pmX"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="xQb-lx-b9C" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <exit id="qoQ-L6-fiC" userLabel="Exit" sceneMemberID="exit"/>
+            </objects>
+            <point key="canvasLocation" x="958" y="406"/>
+        </scene>
+        <!--ModViewController-->
+        <scene sceneID="0cl-ZR-3ty">
+            <objects>
+                <viewController storyboardIdentifier="ModViewController" title="ModViewController" id="NPq-eu-ZJg" customClass="ModViewController" customModule="BlackBox" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="bwI-TJ-TPx"/>
+                        <viewControllerLayoutGuide type="bottom" id="yZG-3H-yQH"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="2gv-2x-zZH">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tkT-WI-bww">
+                                <rect key="frame" x="20" y="28" width="560" height="444"/>
+                                <animations/>
+                                <constraints>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="500" id="i1d-tl-jD5"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Roboto-Medium" family="Roboto" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="i1d-tl-jD5"/>
+                                    </mask>
+                                </variation>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WvD-8L-aef">
+                                <rect key="frame" x="20" y="22" width="40" height="40"/>
+                                <animations/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="40" id="08Y-UY-Arx"/>
+                                    <constraint firstAttribute="height" constant="40" id="57b-g8-vXj"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="GillSans" family="Gill Sans" pointSize="40"/>
+                                <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" image="x_black.png"/>
+                                <connections>
+                                    <action selector="cancel:" destination="0um-4t-wfz" eventType="touchUpInside" id="iRb-xo-rBf"/>
+                                    <action selector="cancel:" destination="NPq-eu-ZJg" eventType="touchUpInside" id="rL1-Q3-3Ex"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <animations/>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="tkT-WI-bww" firstAttribute="top" secondItem="bwI-TJ-TPx" secondAttribute="bottom" constant="8" id="7Jy-8M-nsA"/>
+                            <constraint firstAttribute="centerY" secondItem="tkT-WI-bww" secondAttribute="centerY" constant="50" id="EgO-co-APk"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="tkT-WI-bww" secondAttribute="trailing" id="T0T-9P-4c7"/>
+                            <constraint firstItem="tkT-WI-bww" firstAttribute="leading" secondItem="2gv-2x-zZH" secondAttribute="leadingMargin" id="oOe-dJ-g0D"/>
+                            <constraint firstItem="tkT-WI-bww" firstAttribute="trailing" secondItem="2gv-2x-zZH" secondAttribute="trailingMargin" id="rSN-1j-yaf"/>
+                            <constraint firstItem="WvD-8L-aef" firstAttribute="top" secondItem="2gv-2x-zZH" secondAttribute="topMargin" constant="22" id="seY-N4-puQ"/>
+                            <constraint firstItem="tkT-WI-bww" firstAttribute="leading" secondItem="2gv-2x-zZH" secondAttribute="leadingMargin" id="vKP-3I-JqZ"/>
+                            <constraint firstItem="WvD-8L-aef" firstAttribute="leading" secondItem="2gv-2x-zZH" secondAttribute="leadingMargin" id="x9d-Ws-f4g"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="rSN-1j-yaf"/>
+                                <exclude reference="vKP-3I-JqZ"/>
+                            </mask>
+                        </variation>
+                    </view>
+                    <connections>
+                        <outlet property="cancel" destination="WvD-8L-aef" id="aRc-54-qxS"/>
+                        <outlet property="text" destination="tkT-WI-bww" id="8pI-3s-Te3"/>
+                        <segue destination="BmK-Ti-r5v" kind="unwind" identifier="unwind" unwindAction="unwindToSegue:" id="hwe-cn-VGG"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dPm-VM-6ds" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <exit id="BmK-Ti-r5v" userLabel="Exit" sceneMemberID="exit"/>
+            </objects>
+            <point key="canvasLocation" x="308" y="1064"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="x.png" width="20" height="20"/>
+        <image name="x_black.png" width="20" height="20"/>
+    </resources>
+</document>
